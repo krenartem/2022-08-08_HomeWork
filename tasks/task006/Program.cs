@@ -1,16 +1,16 @@
-﻿// int numberA = Convert.ToInt32(Console.ReadLine());
+﻿Console.Clear();
+Console.Write("Введите число: ");
 
-// Console.WriteLine(numberA);
-int numberA = 15;
-    int numberB = 20;
-    int max;
-    if (numberA > numberB)
-    {
-      max = numberA;
-    }
-    else
-    {
-      max = numberB;
-    }
-    Console.Write("Максимум = ");
-    Console.WriteLine(max);
+int number = Convert.ToInt32(Console.ReadLine());
+if (number % 2 == 0)
+{
+    Console.Write("Число ");
+    Console.Write(number);
+    Console.WriteLine(" четное");
+}
+else
+{
+    Console.Write("Число ");
+    Console.Write(number);
+    Console.WriteLine(" нечетное");
+}
