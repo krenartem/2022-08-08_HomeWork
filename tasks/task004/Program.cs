@@ -1,18 +1,13 @@
-﻿int numberA = 22;
-int numberB = 35;
-int numberC = 9;
-int max;
-if (numberA > numberB)
-{
-    max = numberA;
-}
-else
-{
+﻿Console.Clear();
+Console.WriteLine("Введите число A: ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число B: ");
+int numberB = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число C: ");
+int numberC = Convert.ToInt32(Console.ReadLine());
+int max = numberA;
+if (max < numberB)
     max = numberB;
-}
-    if (max < numberC)
-    {
-        max = numberC;
-    }
-Console.Write("MAX = ");
-Console.WriteLine(max);
+if (max < numberC)
+    max = numberC;
+Console.WriteLine($"MAX = {max}");
