@@ -1,23 +1,18 @@
-﻿int numberA = 9;
-int numberB = 45;
-int numberC = 8;
+﻿int numberA = 22;
+int numberB = 35;
+int numberC = 9;
 int max;
 if (numberA > numberB)
 {
     max = numberA;
 }
-
 else
 {
-    if (numberB > numberC)
-    {
-        max = numberB;
-    }
-    else
+    max = numberB;
+}
+    if (max < numberC)
     {
         max = numberC;
     }
-}
-
 Console.Write("MAX = ");
 Console.WriteLine(max);
